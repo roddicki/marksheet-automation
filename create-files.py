@@ -3,16 +3,18 @@ import shutil
 import openpyxl
 
 
-# Replace 'source.xlsx' and 'destination_copy.xlsx' with the actual file paths
+# Replace 'marksheet.xlsx' with the actual file paths
 source_file = 'marksheet.xlsx'
 
-# Replace 'your_file.csv' with the actual path to your CSV file
+# Replace 'student-names.csv' with the actual path to your CSV file
 file_path = 'student-names.csv'
 
 # Replace 'your_file.xlsx', 'Sheet1', 'A', 1, and 'New Value' with your actual file path, sheet name, 
 # column letter, row number, and the value you want to add.
 sheet_name = 'Sheet1'
 row_number = 5
+col_student_name = 'B'
+col_student_id = 'D'
 
 
 def run():
@@ -69,8 +71,8 @@ def process_csv(file_path):
             for row in csv_reader:
                 print(row)  # You can process each row here as needed
                 # add to excel
-                add_value_to_excel_cell(source_file, sheet_name, row_number, 'B', row[2])
-                add_value_to_excel_cell(source_file, sheet_name, row_number, 'D', row[0])
+                add_value_to_excel_cell(source_file, sheet_name, row_number, col_student_name, row[2])
+                add_value_to_excel_cell(source_file, sheet_name, row_number, col_student_id, row[0])
                 # duplicate file
                 destination_file = "marksheets/feedback_" + row[0] + ".xlsx"
                 duplicate_excel_file(source_file, destination_file)
