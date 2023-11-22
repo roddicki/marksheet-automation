@@ -3,7 +3,7 @@
 ## Overview  
 
 This repo generates .xlsx files from a list of student IDs and names held in ```student-names.csv```.  
-As each .xlsx file is generated the respective cell in the sheet is updated with the student name and ID.  
+As each .xlsx file is generated the respective cell in each sheet is updated with the student name and ID.  
 
 ## Input
 Add student names and IDs in a file called ```student-names.csv``` (download from grade centre)  
