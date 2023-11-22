@@ -3,7 +3,11 @@
 ## Overview  
 
 This repo generates .xlsx files from a list of student IDs and names held in ```student-names.csv```.  
-As each .xlsx file is generated the respective cell in each sheet is updated with the student name and ID.  
+As each .xlsx file is generated the respective cell in each sheet is updated with the student name and ID. 
+
+Once the marksheets are generated (and completed) they can be uploaded to the UWE Blackboard Spreadsheet Marking (Marks and Feedback) using the blackboard upload tool: https://info.uwe.ac.uk/online/Blackboard/staff/guides/online-assessment/upload.asp  
+
+Format: https://info.uwe.ac.uk/online/Blackboard/staff/guides/online-assessment/feedback.asp  
 
 ## Input
 Add student names and IDs in a file called ```student-names.csv``` (download from grade centre)  
