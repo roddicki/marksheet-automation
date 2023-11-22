@@ -13,7 +13,7 @@ Follow the existing column format:
 Add a template .xlsx marksheet ```marksheet.xlsx```  
 
 ## Output generated:
-An .xlsx file is generated for each student in the ```marksheets``` directory. Each file will be called ```feedback_studentID``` with the field for their ```studentID``` and ```name``` populated.
+An .xlsx file is generated for each student in the ```marksheets``` directory. Each file will be called ```feedback_studentID``` with the cell in the sheet for their ```studentID``` and ```name``` populated.
 
 ## Setup
 Install dependency: open excel
