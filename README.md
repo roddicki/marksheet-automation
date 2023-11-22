@@ -24,8 +24,8 @@ Student names and IDs should be in a file called ```student-names.csv```
 This should follow the existing column format:
 ```ID | username | name ``` 
 
-Edit create-files.py with the correct Sheet name and Row and columns to be populated :
-```
+Edit create-files.py with the correct Sheet name and Row and columns to be populated :  
+```python
 sheet_name = 'Sheet1'  
 row_number = 5  
 col_student_name = 'B'  
